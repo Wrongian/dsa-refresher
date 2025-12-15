@@ -134,7 +134,7 @@ https://leetcode.com/problems/permutations/
 
 ### Hamiltonian Cycle
 
-### Edmonds Karp (maximum flow)
+### Edmonds Karp (Maximum Flow)
 
 ### Kuhn's Algorithm (Max Bipartite Matching)
 
@@ -145,6 +145,8 @@ https://leetcode.com/problems/permutations/
 ### Linear Congruential Generator (LCG)
 
 ## Cycle Detection
+
+### Tortoise and Hare Algorithm
 
 ## Linear Equations
 
@@ -171,3 +173,5 @@ https://leetcode.com/problems/permutations/
 ### Line Sweep
 
 ### Find Top-k
+
+### Boyer-Moore Majority Vote Algorithm
