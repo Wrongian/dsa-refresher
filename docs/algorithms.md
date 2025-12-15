@@ -6,7 +6,7 @@
 Subtract smaller number from larger number, GCD of both numbers remain the same.
 Hence, recursively subtract smaller from larger number. This can be done via the modulus operation.
 
-Time Complexity: O(log n)
+Time Complexity: O(log(min(n, m)))
 
 Space Complexity: O(1)
 
