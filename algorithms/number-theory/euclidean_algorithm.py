@@ -4,7 +4,7 @@ def gcd(n, m):
   if m > n:
     n, m = m, n
 
-  if m == 0: 
-    return n
+  while m != 0: 
+    n, m = m, n % m
 
-  return gcd(m, n % m)
+  return n
