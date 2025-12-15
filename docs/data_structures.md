@@ -14,7 +14,6 @@
 
 ### Double Sided Queue
 
-
 ## Lists
 
 ### Singly Sided Linked List

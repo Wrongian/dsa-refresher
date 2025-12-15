@@ -7,9 +7,11 @@ Subtract smaller number from larger number, GCD of both numbers remain the same.
 Hence, recursively subtract smaller from larger number. This can be done via the modulus operation.
 
 Time Complexity: O(log n)
+
 Space Complexity: O(1)
 
 Problems:
+
 https://leetcode.com/problems/find-greatest-common-divisor-of-array/
 
 ### Lowest Common Multiple
@@ -39,11 +41,13 @@ https://leetcode.com/problems/combinations/
 
 ### Permutations
 Time Complexity: 
+
 O(n * n!) (approximation)
+
 O((n^2) * (e * Γ(n + 1, 1) -n!)) (better approximation by counting number of nodes in dfs tree)
 
-
 Problems:
+
 https://leetcode.com/problems/permutations/
 
 
