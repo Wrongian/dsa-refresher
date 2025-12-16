@@ -1,19 +1,19 @@
 # assume len(nums) >= 1
-def majority_element(nums):
+def majority_element(elements):
   # start with first element
   count = 1  
-  ele = nums[0]
+  candidate = elements[0]
 
-  for i in range(1, len(nums)):
-    num = nums[i]
+  for i in range(1, len(elements)):
+    num = elements[i]
 
-    if ele != num:
+    if candidate != num:
       count -= 1
     else:
       count += 1
 
     if count == 0:
-      ele = num
+      candidate = num
       count = 1
 
-  return ele
+  return candidate
