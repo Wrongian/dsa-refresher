@@ -219,9 +219,9 @@ Time Complexity:  O(n*log(n))
 
 main bottleneck is the sorting (n is the number of events). 
 
-Space Complexity:
+Space Complexity: O(n)
 
-O(n) for arrays to store the sorted events. 
+For arrays to store the sorted events. 
 
 Problems:
 
