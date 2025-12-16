@@ -3,7 +3,7 @@ class Node:
     self.val = x
     self.next = next
 
-def hasCycle(head):
+def has_cycle(head):
   # slow and fast pointers
   slow = head
   fast = head
