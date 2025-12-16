@@ -16,4 +16,13 @@ def majority_element(elements):
       candidate = num
       count = 1
 
-  return candidate
+  count = 0
+  for ele in elements:
+    if ele == candidate:
+      count += 1
+  
+  if count > len(elements) // 2:
+    return candidate
+  else:
+    # no majority candidate in the list
+    return None
