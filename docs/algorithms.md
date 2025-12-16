@@ -211,12 +211,11 @@ https://leetcode.com/problems/linked-list-cycle/
 
 ### Line Sweep
 
-Time Complexity: 
 Put all events into an array and sort. Sweep across line/plane and process events in order, update as events are processed.
 If the number of types of events is small, can create multiple arrays for events and sort that instead.
 Reducing the value of n.
 
-O(n*log(n)) 
+Time Complexity:  O(n*log(n)) 
 
 main bottleneck is the sorting (n is the number of events). 
 
