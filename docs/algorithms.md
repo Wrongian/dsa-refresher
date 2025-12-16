@@ -171,7 +171,7 @@ O(n)
 Slower pointer enters the cycle after x steps. Faster pointer enters at <= x steps, since it moves faster.
 in a cycle of y length, the distance between the two pointers decreases by 1 each iteration.
 So the max number of iterations for both pointers to meet in the cycle is y.
-Hence, number of iterations <= y + x <= n. Since each iteration is O(1). Time complexity is O(n)
+Hence, number of iterations <= y + x <= n. Since each iteration is O(1), for n iterations, time complexity is O(n)
 
 Space Complexity:
 
@@ -201,6 +201,12 @@ https://leetcode.com/problems/linked-list-cycle/
 
 ### Convex Hull
 
+## Matrices
+
+### Rotate Matrix Clockwise by 90 degrees
+
+### Transpose Matrix
+
 ## ETC
 
 ### Line Sweep
@@ -226,3 +232,26 @@ https://adventofcode.com/2025/day/5
 ### Find Top-k
 
 ### Boyer-Moore Majority Vote Algorithm
+Find element with more than floor(n/2) occurrences amongst n elements.
+Set the first element as the current candidate with a count of 1, whenever a different element is seen
+decrement the count by 1, if the count is 0, change the candidate to the new element. If the element is the current
+candidate, increment the count by 1. After iterating through all the elements, the candidate will be the majority element
+if it exists.
+To check if majority element exists, iterate through all elements and count occurrences of candidate, and check
+if it has more than floor(n/2) occurrences, if its does its a majority element.
+
+let i be the number of occurrences of the majority element in the array, then
+the number of occurrences of other elements combined is j = n - i.
+since i is the majority element, i > j. Since there are i increments for the majority element
+and j decrements for the majority element, the candidate is guaranteed to be the majority element with count > 0 
+after all elements are iterated through.
+
+Time Complexity: O(n) 
+
+Iterate through entire array, O(1) for each element.
+
+Space Complexity: O(1)
+
+Problems:
+
+https://leetcode.com/problems/majority-element/
