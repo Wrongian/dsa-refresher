@@ -17,10 +17,43 @@
 ## Lists
 
 ### Singly Sided Linked List
+Each node stores values as well as the pointer to the next node.
+
+Operations:
+
+Add: O()
+
+Reverse: O(n)
+
+
+Space:
+
+O(n) number of nodes in the linked list
+
+Problems:
+
+https://leetcode.com/problems/remove-linked-list-elements/
+
+https://leetcode.com/problems/reverse-linked-list/
 
 ### Doubly Sided Linked List
 
+Problems:
+
+https://leetcode.com/problems/lru-cache
+
+https://leetcode.com/problems/lfu-cache
+
+
 ### Ordered Dictionary
+
+Problems:
+
+https://leetcode.com/problems/lru-cache
+
+https://leetcode.com/problems/lfu-cache
+
+
 
 ## Heaps
 

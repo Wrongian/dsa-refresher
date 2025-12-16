@@ -36,6 +36,14 @@ https://leetcode.com/problems/find-greatest-common-divisor-of-array/
 
 ### Combinations
 
+Time Complexity: 
+
+Θ(C(n, k)*k) From outputting all combinations with a maximum of k elements(copying) each
+
+Space Complexity:
+
+O(k) from function call stack size equal to max recursive depth which is the number of elements to choose from
+
 Problems:
 
 https://leetcode.com/problems/combinations/
@@ -47,13 +55,16 @@ O(n * n!) (approximation)
 
 O((n^2) * (e * Γ(n + 1, 1) -n!)) (better approximation by counting number of nodes in dfs tree)
 
+Space Complexity: 
+
+O(n) from function call stack size equal to max recursive depth which is the number of elements to permute over
+
 Problems:
 
 https://leetcode.com/problems/permutations/
 
 
 ### Subsets
-
 
 ## Searching
 
@@ -148,6 +159,27 @@ https://leetcode.com/problems/permutations/
 ## Cycle Detection
 
 ### Tortoise and Hare Algorithm
+Used to detect cycles in a linked list. Have two pointers traversing the linked list, one faster and one slower.
+If there is a cycle, the faster pointer will point to an earlier node and eventually meet the slower pointer.
+If there is no cycle, the faster pointer will find the ending node and return that there is no cycle.
+
+
+Time Complexity: 
+
+O(n)
+
+Slower pointer enters the cycle after x steps. Faster pointer enters at <= x steps, since it moves faster.
+in a cycle of y length, the distance between the two pointers decreases by 1 each iteration.
+So the max number of iterations for both pointers to meet in the cycle is y.
+Hence, number of iterations <= y + x <= n. Since each iteration is O(1). Time complexity is O(n)
+
+Space Complexity:
+
+O(1)
+
+Problems:
+
+https://leetcode.com/problems/linked-list-cycle/
 
 ## Linear Equations
 
@@ -172,6 +204,24 @@ https://leetcode.com/problems/permutations/
 ## ETC
 
 ### Line Sweep
+
+Time Complexity: 
+Put all events into an array and sort. Sweep across line/plane and process events in order, update as events are processed.
+If the number of types of events is small, can create multiple arrays for events and sort that instead.
+Reducing the value of n.
+
+O(n*log(n)) 
+
+main bottleneck is the sorting (n is the number of events). 
+
+Space Complexity:
+
+O(n) for arrays to store the sorted events. 
+
+Problems:
+
+https://leetcode.com/problems/meeting-rooms-ii/
+https://adventofcode.com/2025/day/5
 
 ### Find Top-k
 
