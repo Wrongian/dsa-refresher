@@ -1,5 +1,10 @@
 # Techniques
 
+## Time Complexity
+Time Complexity >= Space Complexity
+
+To place data into the space to begin with, need time.
+
 ## Bits
 
 ## Coordinate Compression
@@ -31,3 +36,7 @@ https://leetcode.com/problems/number-of-smooth-descent-periods-of-a-stock/
 ## Chinese Remainder Theorem
 
 ## Ray Tracing
+
+## Greedy 
+
+## Master Theorem
