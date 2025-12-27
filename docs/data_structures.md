@@ -71,6 +71,10 @@ Merge/Union: O(n)
 
 Delete: O(log(n))
 
+Problems:
+
+https://leetcode.com/problems/meeting-rooms-iii
+
 ### Fibonacci Heap
 Collection of heap ordered trees with lazy merging.
 
